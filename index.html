@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script type="module" src="main.js" defer></script>
+    <title>ToDoList</title>
+</head>
+<body>
+    <div class="header">
+        <h1>TO-DO LIST</h1>
+    </div>
+
+    <div class="container">
+        <div class="new-task">
+            <input type="text" id="todo" 
+            autocomplete="off" placeholder="Введите новую задачу" maxlength="40">
+            <button id="add">+</button>
+        </div>
+
+        <div class="task-list">
+            <ul id="list"></ul>
+            <h2 class="emptyList">Пока здесь ничего нет...</h2>
+        </div>
+    </div>
+
+    <div class="saved">
+        <button class="save"></button>
+        <div class="open">
+            <label for="file-input">
+                <img src="img/open.png" alt="">
+            </label>
+            <input type="file" id="file-input" accept="application/json">
+        </div>
+    </div>
+</body>
+</html>
